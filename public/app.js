@@ -2135,7 +2135,7 @@ Button = __decorate([
 let AppContainer = class AppContainer extends s$1 {
     render() {
         return y `
-    <mwc-button>Hello There ! The app content goes here.</mwc-button>
+    this is the beginning of a great project!
     `;
     }
 };

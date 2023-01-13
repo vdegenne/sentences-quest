@@ -21,7 +21,7 @@ export class AppContainer extends LitElement {
 
   render () {
     return html`
-    <mwc-button>Hello There ! The app content goes here.</mwc-button>
+    this is the beginning of a great project!
     `
   }
 }
