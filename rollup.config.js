@@ -4,12 +4,12 @@ import json from '@rollup/plugin-json'
 import terser from '@rollup/plugin-terser'
 
 export default {
-  input: 'src/main.ts',
+  input: 'src/entry.ts',
   output: { file: 'public/app.js', format: 'esm' },
   plugins: [
     tsc(),
     resolve(),
     json(),
-    process.env.minify ? terser() : {},
+    process.env.minify ? terser({format: {comments: false}}) : {},
   ]
 }

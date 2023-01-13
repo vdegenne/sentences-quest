@@ -24,7 +24,6 @@
     "build": "rollup -c --environment minify",
     "watch": "rollup -cw",
     "watch:server": "pm2 start pm2.config.js",
-    "browser-sync:static": "browser-sync public --files public/app.js --no-notify",
-    "browser-sync": "browser-sync start --proxy http://localhost:3100/ --files public/app.js --no-notify"
+    "browser-sync": "browser-sync start --proxy http://localhost:5000/ --files public/app.js --no-notify"
   }
 }

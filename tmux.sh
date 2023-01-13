@@ -2,9 +2,9 @@
 
 session='test'
 
-tmux new -d -s $session 'npm run watch'
+tmux new -d -s $session 'npx firebase emulators:start'
 
-tmux split-window -h 'npm run browser-sync:static'
+tmux split-window -h 'npm run browser-sync'
 #tmux split-window -h 'npm run browser-sync'
 
 #tmux split-window -f
